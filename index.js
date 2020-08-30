@@ -56,7 +56,7 @@ textInput.addEventListener("keypress", function(e) {
 
 function getResult(query) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=63dd3237fe179758fe46366d46b55fe8&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${query}&APPID=63dd3237fe179758fe46366d46b55fe8&units=metric`
   )
     .then(weather => {
       return weather.json();

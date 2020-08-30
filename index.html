@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Tracker By Layobright</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <header>
+          <div class="header-left">
+            <h1 id="time"></h1>
+            <p class="weekday"></p>
+            <p class="month"></p>
+            <h6 class="description">-</h6>
+          </div>
+          <div class="header-right">
+            <div class="image-div">
+              <img src="weather.png" />
+            </div>
+
+            <h2 class="country">Loading...</h2>
+          </div>
+        </header>
+
+        <section>
+            <div class="section-left">
+                <h2 class="name">Loading...</h2>
+                <div class="div-image">
+                  <img src="icons/unknown.png" class="image">
+                </div>
+            </div>
+            <div class="section-right">
+                <h2 class="cloud">Loading...</h2>
+                <p>Now</p>
+                <h1 class="temperature">-C</h1>
+            </div>
+        </section>
+
+        <article>
+            <div class="one">
+                <p>Min Temperature</p>
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="div-one">
+                <p class="min-temp">-</p>
+            </div>
+
+            <div class="two">
+                <p>Sunset</p>
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="div-two">
+                <p class="sunset">-</p>
+            </div>
+
+
+            <div class="three">
+                <p>Max Temperature</p>
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="div-three">
+                <p class="max-temp">-</p>
+            </div>
+
+
+            <div class="four">
+                <p>Sunrise</p>
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="div-four">
+                <p class="sunrise">-</p>
+            </div>
+
+        </article>
+
+        <div class="error">
+          <!-- <i class="fa fa-exclamation-circle"></i>   -->
+        </div>
+
+        <footer>
+          <input type="text" class="input" placeholder="Enter your search eg - Abeokuta,ng" />
+        </footer>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="query.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

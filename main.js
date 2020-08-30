@@ -28,7 +28,7 @@ function setPosition(position){
 // SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
 function showError(error){
     errors.style.display = "block";
-    errors.innerHTML = `<p> ${error.message} </p>`;
+    errors.innerHTML = `<p>Please turn on your Location</p>`;
 }
 
 // GET WEATHER FROM API PROVIDER

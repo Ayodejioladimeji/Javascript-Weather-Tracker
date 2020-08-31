@@ -61,7 +61,9 @@ function getResult(query) {
     .then(weather => {
       return weather.json();
     })
-    .then(displayResult);
+    .then(displayResult)
+    .catch(err => errors.innerHTML = "Enter a correct Location",
+    errors.innerHTML = "");
 }
 
 function displayResult(weather) {

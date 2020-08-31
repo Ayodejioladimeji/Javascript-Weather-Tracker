@@ -83,7 +83,7 @@ function displayResult(weather) {
   cloud.textContent = `${weather.weather[0].main}`;
 
   let temperature = document.querySelector(".temperature");
-  temperature.textContent = `${Math.floor(weather.main.temp)}°c`;
+  temperature.textContent = `${Math.floor(weather.main.temp)}°`;
 
   let min = document.querySelector(".min-temp");
   min.textContent = `${weather.name} : ${weather.main.temp_min}°C`;
